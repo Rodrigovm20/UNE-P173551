@@ -1,0 +1,31 @@
+body{
+    background-color: rgba(255, 196, 0, 0.74);
+    text-align: center;
+    margin-top: 300px;
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
+}
+.hora{
+    font-size: 50px;
+    margin-left: auto;
+    background-color: red;
+    font-family: 'Bellota Text', cursive;
+}
+.mn{
+    padding-left: 5px;
+    font-size: 50px;
+    margin-right: auto;
+    background-color: green;
+    font-family: 'Bellota Text', cursive;
+}
+.hora2{
+    background-color:rgba(255, 166, 0, 0.685);
+}
+.hora3{
+    background-color: rgb(255, 145, 0);
+}
+.negro{
+    background-color: rgba(0, 0, 0, 0.158);
+    font-family: 'Bellota Text', cursive;
+}
