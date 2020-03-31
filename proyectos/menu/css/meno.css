@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=B612+Mono|Cutive+Mono|Overpass+Mono&display=swap')
+html {
+	background-color: gray;
+}
+body {
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #d7d7a8;
+	
+}
+
+.titulo {
+	border-bottom: solid 8px black;
+	border-top: solid 8px black; 
+	width: fit-content;
+}
+
+img {
+	height:150px;
+	width:225px;
+	margin-left: 10px;
+}
+
+.imagen {
+	float:left;
+	clear:
+	padding-left: 30px;
+}
+
+.item {
+	clear: both;
+	margin-bottom:200px;
+	
+}
+
+h1 {
+font-size: 3em;
+margin:10px;
+}
+
+.cont {
+	float: right;
+	width: 80%;
+	margin-left: 20px;
+}
+
+h2 {
+	font-family: 'B612 Mono', monospace;
+}
+
+p{
+	font-family: 'Cutive Mono', monospace;
+	margin-left: 5px;
+}
+
+h3 {
+	font-family: 'Overpass Mono', monospace;
+}

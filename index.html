@@ -6,12 +6,12 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="proyecto.css">
 <title>Proyectos de páginas web</title>
 </head>
 <body>
     <div class="progress">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+        <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
       </div>
     <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
         <span class="navbar-brand mb-0 h1">Proyecto de páginas web</span>
@@ -21,15 +21,15 @@
             <div class="card text-center" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Menú</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="./proyectos/menu.html" class="btn btn-primary">Ir</a>
+                  <p class="card-text">Menú de un restaurante</p>
+                  <a href="./proyectos/menu/menu.html" class="btn btn-primary">Ir</a>
                 </div>
               </div>
 
               <div class="card text-center" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Horario</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text">Horario del grupo de Ingeniería en Sistemas de quinto cuatrimestre</p>
                   <a href="./proyectos/horario.html" class="btn btn-primary">Ir</a>
                 </div>
               </div>
@@ -37,7 +37,7 @@
               <div class="card text-center" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Formulario</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text">Formulario para comprar un producto en línea</p>
                   <a href="./proyectos/formulario.html" class="btn btn-primary">Ir</a>
                 </div>
               </div>
@@ -45,7 +45,7 @@
               <div class="card text-center" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Reloj</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text">Reloj digital hecho con Javascript</p>
                   <a href="./proyectos/reloj bien/reloj.html" class="btn btn-primary">Ir</a>
                 </div>
               </div>
@@ -53,7 +53,7 @@
               <div class="card text-center" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">JSON</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text">Convertidor de tecto a Json y de Json a texto</p>
                   <a href="./proyectos/json/jason.html" class="btn btn-primary">Ir</a>
                 </div>
               </div>
@@ -61,7 +61,7 @@
               <div class="card text-center" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Juego del gato/Tic Tac Toe</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text">Juego del gato para dos personas</p>
                   <a href="./proyectos/gato juego/gatohuego.html" class="btn btn-primary">Ir</a>
                 </div>
               </div>
@@ -69,21 +69,35 @@
               <div class="card text-center" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Pronóstico del clima</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text">Pronóstico del clima de la semana usando un Api</p>
                   <a href="./proyectos/clima api java/clima.html" class="btn btn-primary">Ir</a>
                 </div>
               </div>
 
               <div class="card text-center" style="width: 18rem;">
                 <div class="card-body">
-                  <h5 class="card-title">Pronóstico del clima con jquery</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <h5 class="card-title">Pronóstico del clima con Jquery</h5>
+                  <p class="card-text">Pronóstico del clima del día usando Jquery</p>
                   <a href="./proyectos/CLIMA QUERY/CLIMA QUERY.html" class="btn btn-primary">Ir</a>
                 </div>
               </div>
 
 
-
+              <script type="text/javascript">
+                $( document ).ready(function() {   
+                 var i = 0;
+                 var refreshIntervalId = setInterval(function(){ 
+              
+                  if(i==100)
+                  {
+                   clearInterval(refreshIntervalId);
+                   return;
+                  }
+                  i++;    
+                  $("div.progress-bar").html(i +"%").css("width", i +"%");    
+                 }, 100);
+                });
+               </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
